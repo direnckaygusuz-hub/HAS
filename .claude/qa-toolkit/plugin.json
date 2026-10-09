@@ -1,0 +1,42 @@
+{
+  "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
+  "name": "qa-toolkit",
+  "version": "0.11.0",
+  "description": "QA practices: web feature and ticket testing, release checks, web environment matrix, site crawls, chatbot and AI testing, floating UI overlap, authenticated flows, tracking plan and app analytics audits, Android and iOS feature testing, Android build regression, iOS device testing, mobile network injection, Live Activities, and the house style for test reports and bug tickets.",
+  "author": {
+    "name": "Floris Andréa",
+    "email": "floris.andrea@framna.com"
+  },
+  "keywords": [
+    "qa",
+    "regression-testing",
+    "playwright",
+    "maestro",
+    "analytics",
+    "android",
+    "ios",
+    "chatbot",
+    "mitmproxy"
+  ],
+  "repository": "https://github.com/floris-andrea/QA-Toolkit",
+  "userConfig": {
+    "clients_dir": {
+      "type": "directory",
+      "title": "Client projects folder",
+      "description": "The folder that holds one folder per client project (each with its own CLAUDE.md) and the shared <client>-context.md files. /qa-project and the scratch-folder reminder look here.",
+      "default": "~/Documents/Claude"
+    },
+    "jira_projects": {
+      "type": "string",
+      "title": "Jira project keys",
+      "description": "Comma-separated Jira project keys you file bugs and notes in, e.g. ABC, XYZ. Leave empty to be asked each time.",
+      "default": ""
+    },
+    "toolkit_clone": {
+      "type": "directory",
+      "title": "qa-toolkit clone (maintainers)",
+      "description": "Your local git clone of qa-toolkit, used by /qa-learn. Leave empty if you don't maintain the plugin; /qa-learn then asks or finds it from the marketplace source.",
+      "default": ""
+    }
+  }
+}
